@@ -6,7 +6,7 @@ Example:
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/goose.jpg" style="width: 200px;">
-  <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/heatmap.pdf" style="width: 200px;"><br><br>
+  <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/heatmap.png" style="width: 200px;"><br><br>
 </div>
 
 For more details on LRP see:  
