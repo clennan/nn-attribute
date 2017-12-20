@@ -7,7 +7,7 @@
 ############
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__
 *.py[cod]
 *$py.class
 
@@ -110,3 +110,5 @@ __MACOSX/
 src/coco_caption/
 
 results/
+
+.pyc

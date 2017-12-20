@@ -5,6 +5,7 @@ from src.propagate import propagate
 from src.utils import heatmap
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 
 def main(model, weights_file, classes_file, alpha, image_file, target_file):
@@ -18,8 +19,14 @@ def main(model, weights_file, classes_file, alpha, image_file, target_file):
     prediction = classes[str(np.argmax(logits[0]))]
     print('predicted class: {}'.format(prediction))
 
-    plt.plot(heatmap(relevances[0]))
-    plt.savefig(target_file)
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
+    plt.imshow(heatmap(relevances[0]))
+    plt.tight_layout()
+    plt.axis('off')
+    plt.savefig(os.path.join('results', target_file))
+    print('heatmap saved as {}'.format(os.path.join('results', target_file)))
 
 
 if __name__ == '__main__':

@@ -30,7 +30,8 @@ def fprop_first_linear(x, f, w, b, lowest, highest):
     h = x * 0 + highest
     z = tf.matmul(x, w) - tf.matmul(l, v) - tf.matmul(h, u) + tf.maximum(b, 0)
     s = tf.divide(f, z)
-    f = x * tf.matmul(s, tf.transpose(w)) - l * tf.matmul(s, tf.transpose(v)) - h * tf.matmul(s, tf.transpose(u))
+    f = x * tf.matmul(s, tf.transpose(w)) - l * tf.matmul(s, tf.transpose(v)) \
+        - h * tf.matmul(s, tf.transpose(u))
     return f
 
 

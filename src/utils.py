@@ -1,11 +1,6 @@
 
-import matplotlib
-matplotlib.use('TkAgg')
 import json
 import numpy as np
-import os
-import matplotlib.pyplot as plt
-import skimage.transform
 
 
 def load_json(json_path):

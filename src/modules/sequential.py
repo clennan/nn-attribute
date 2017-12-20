@@ -9,11 +9,11 @@ class Sequential(Module):
         self.modules = modules
 
     def forward(self, x):
+        print('-------------------------------------------------')
         print('Forward pass...')
         print('-------------------------------------------------')
         for m in self.modules:
-            print(m.name+'::')
-            print(x.get_shape().as_list())
+            print(m.name+':', x.get_shape().as_list())
             x = m.forward(x)
         print('-------------------------------------------------')
         return x
@@ -22,8 +22,7 @@ class Sequential(Module):
         print('Backpropagating relevances...')
         print('-------------------------------------------------')
         for m in self.modules[::-1]:
-            print(m.name+'::')
-            print(R.get_shape().as_list())
+            print(m.name+':', R.get_shape().as_list())
             R = m.lrp(R)
         print('-------------------------------------------------')
         return R
