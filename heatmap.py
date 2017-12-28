@@ -23,7 +23,6 @@ def main(model, weights_file, classes_file, alpha, image_file, target_file):
         os.makedirs('results')
 
     plt.imshow(heatmap(relevances[0]))
-    #plt.tight_layout()
     plt.axis('off')
     plt.savefig(os.path.join('results', target_file), bbox_inches='tight', pad_inches=0)
     print('heatmap saved as {}'.format(os.path.join('results', target_file)))
