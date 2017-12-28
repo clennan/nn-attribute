@@ -103,12 +103,12 @@ ENV/
 
 data/vgg16.npy
 
-models/
 
 __MACOSX/
 
 src/coco_caption/
 
 results/
+include/
 
 .pyc
