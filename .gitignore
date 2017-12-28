@@ -110,6 +110,5 @@ __MACOSX/
 src/coco_caption/
 
 results/
-include/
 
 .pyc
