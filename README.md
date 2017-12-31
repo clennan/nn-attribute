@@ -1,5 +1,5 @@
 # Layer-wise Relevance Propagation (LRP) to attribute importance of input pixels
-Generates heatmaps that highlights image pixels that were important for a CNN classification result.
+Generates heatmaps that highlight image pixels that were important for a CNN classification result.
 Currently only supports VGG16. The CNN and relevance propagation rules are implemented in TensorFlow.
 
 Example:
