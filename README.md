@@ -5,8 +5,7 @@ Currently only supports VGG16. The CNN and relevance propagation rules are imple
 Example:
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/goose.jpg" style="width: 200px;">
-  <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/goose_hm.png" style="width: 230px;"><br><br>
+  <img src="https://raw.githubusercontent.com/clennan/nn-attribute/master/src/readme_files/results.png" style="width: 200px;">
 </div>
 
 For more details on LRP see:  
